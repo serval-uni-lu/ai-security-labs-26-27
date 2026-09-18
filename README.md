@@ -132,7 +132,7 @@ code .
 
 uv downloads the required Python version if necessary and creates a `.venv` folder with the dependencies recorded in `uv.lock`. The first installation can take several minutes, including downloading PyTorch.
 
-Lab 01 uses Python 3.8 and the package versions specified in its `pyproject.toml`. Keep these versions for the exercises.
+Lab 01 uses **Python 3.12**. uv selects it automatically from `.python-version` and installs the package versions specified in `pyproject.toml`. Keep these versions for the exercises. The lab runs on the CPU; Linux and WSL use the CPU build of PyTorch, so no CUDA installation is needed.
 
 Wait for each command to finish successfully before running the next. The preparation command copies each starter notebook in the lab to a filename containing your name, for example:
 

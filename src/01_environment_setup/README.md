@@ -17,6 +17,8 @@ The preparation command preserves existing submission files when run again. Save
 
 The notebook checks the installed packages, downloads a dataset, and trains models with scikit-learn and PyTorch.
 
+This lab uses Python 3.12, selected automatically by uv. PyTorch 2.8 is used on Linux/WSL and Apple silicon Macs. Intel Macs automatically use PyTorch 2.2.2, the [last series with official Intel macOS builds](https://pytorch.org/blog/pytorch2-2/). NumPy stays at 1.26.4 for compatibility with the existing `mlc` dataset interface.
+
 ## Dataset download
 
 The lab downloads LCLD from [serval-uni-lu/tabularbench on Hugging Face](https://huggingface.co/datasets/serval-uni-lu/tabularbench/tree/main/lcld_v2). The data CSV is about 187 MB. `lab_data.py` verifies the downloads and reuses valid cached files in `data/mlc/lcld_v2/`.
