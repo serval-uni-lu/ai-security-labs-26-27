@@ -1,0 +1,15 @@
+[project]
+name = "01-environment-setup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "~=3.8.0"
+
+
+dependencies = [
+    "scikit-learn==1.2.1",
+    "torch==1.12.1",
+    "serval-ml-commons==0.1.4",
+    "ipykernel==6.25.2",
+    "tqdm==4.66.1",
+]
