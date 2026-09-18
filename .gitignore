@@ -14,3 +14,6 @@ wheels/
 # Student identity and personal notebook copies
 /.env
 /src/*/*__submission_*.ipynb
+
+# Downloaded lab datasets
+/src/*/data/

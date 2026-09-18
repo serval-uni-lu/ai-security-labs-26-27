@@ -16,3 +16,9 @@ Open `01_environment_setup__submission_FirstName_FamilyName.ipynb` (with your ow
 The preparation command preserves existing submission files when run again. Save and submit your named notebook according to the [submission instructions](../../README.md#5-run-and-submit-your-notebook).
 
 The notebook checks the installed packages, downloads a dataset, and trains models with scikit-learn and PyTorch.
+
+## Dataset download
+
+The lab downloads LCLD from [serval-uni-lu/tabularbench on Hugging Face](https://huggingface.co/datasets/serval-uni-lu/tabularbench/tree/main/lcld_v2). The data CSV is about 187 MB. `lab_data.py` verifies the downloads and reuses valid cached files in `data/mlc/lcld_v2/`.
+
+Keep the notebook in this lab folder so its helper module and environment are available. If a download fails, check your connection and rerun the data-loading cell; incomplete or invalid cached files are downloaded again.
