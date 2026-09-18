@@ -2,10 +2,11 @@
 
 Follow the [setup instructions](../../README.md) to install uv, create this lab's environment, and configure VS Code.
 
-From this folder:
+From the repository root, enter the lab folder, install its dependencies, and launch VS Code:
 
 ```bash
-uv sync --locked
+cd src/01_environment_setup
+uv sync
 code .
 ```
 
