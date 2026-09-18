@@ -10,7 +10,13 @@ Labs will be added throughout the course. Each lab has its own Python environmen
 
 ## 1. Install the tools
 
-These instructions use a terminal on Linux or macOS. On Windows, use [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install/) and run the commands inside your Linux distribution. With VS Code, install the WSL extension and open the folder in WSL.
+On Linux or macOS, use your usual terminal. On Windows, we recommend [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install/) with Ubuntu:
+
+1. Install WSL 2 using the linked instructions, then open the Ubuntu terminal.
+2. Install VS Code on Windows and its **WSL** extension from Microsoft (`ms-vscode-remote.remote-wsl`).
+3. Run all commands below inside the Ubuntu terminal, including installing Git and uv. Clone the repository in your Linux home directory (`cd ~`).
+
+Running `code .` from that terminal opens the lab in VS Code connected to WSL. Install the Python and Jupyter extensions in WSL when prompted, and select the lab's `.venv/bin/python` notebook kernel.
 
 Install [Git](https://git-scm.com/downloads) and [Visual Studio Code](https://code.visualstudio.com/). In VS Code, install the **Python** extension from Microsoft (`ms-python.python`) and the **Jupyter** extension from Microsoft (`ms-toolsai.jupyter`).
 
