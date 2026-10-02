@@ -7,7 +7,7 @@ Labs will be added throughout the course. Each lab has its own Python environmen
 ## Available labs
 
 - [Lab 01 — Environment setup](src/01_environment_setup/): install the dependencies with uv and run your first notebook.
-- [Lab 03 — Certified robustness](src/03_certified_robustness/): compare auto-LiRPA bounds and certificates with an adversarial attack.
+- [Lab 03 — Certified robustness](src/03_certified_robustness/): a 15–20 minute practical with two code-completion exercises using auto-LiRPA bounds and certificates. Open the notebook directly using its lab README; there is no submission.
 
 ## 1. Install the tools
 
@@ -181,7 +181,9 @@ git pull --ff-only
 
 Your `.env` and named submission notebooks stay local and are ignored by Git. Save your notebook before pulling. If Git still reports changes to tracked files, ask the teaching team before discarding anything.
 
-Then `cd` into the newly released lab folder and use the same commands:
+Then `cd` into the newly released lab folder and follow its README. Lab 03 uses
+the notebook directly, without the preparation command. For labs that use named
+notebook copies, use the same commands:
 
 ```bash
 uv sync
