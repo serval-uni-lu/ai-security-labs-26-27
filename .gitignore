@@ -15,5 +15,8 @@ wheels/
 /.env
 /src/*/*__submission_*.ipynb
 
+# Local instructor solutions
+/src/*/*__correction.ipynb
+
 # Downloaded lab datasets
 /src/*/data/

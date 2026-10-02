@@ -7,6 +7,7 @@ Labs will be added throughout the course. Each lab has its own Python environmen
 ## Available labs
 
 - [Lab 01 — Environment setup](src/01_environment_setup/): install the dependencies with uv and run your first notebook.
+- [Lab 03 — Certified robustness](src/03_certified_robustness/): compare auto-LiRPA bounds and certificates with an adversarial attack.
 
 ## 1. Install the tools
 

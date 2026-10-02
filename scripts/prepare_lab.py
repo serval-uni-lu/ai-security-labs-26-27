@@ -8,6 +8,7 @@ import unicodedata
 
 
 SUBMISSION_MARKER = "__submission_"
+CORRECTION_SUFFIX = "__correction"
 
 
 def filename_name(value):
@@ -29,7 +30,9 @@ def prepare_lab(lab, first_name, family_name):
 
     templates = sorted(
         path for path in lab.glob("*.ipynb")
-        if SUBMISSION_MARKER not in path.stem and path.is_file()
+        if SUBMISSION_MARKER not in path.stem
+        and not path.stem.endswith(CORRECTION_SUFFIX)
+        and path.is_file()
     )
     if not templates:
         raise ValueError("No starter notebooks found in this lab folder.")

@@ -52,6 +52,14 @@ class PrepareLabTests(unittest.TestCase):
                     MODULE.prepare_lab(self.lab, first, family)
         self.assertEqual(list(self.lab.glob("*.ipynb")), [self.starter])
 
+    def test_instructor_correction_is_not_a_student_template(self):
+        correction = self.lab / "01_exercise__correction.ipynb"
+        correction.write_bytes(b"instructor solutions")
+        copies = MODULE.prepare_lab(self.lab, "Ada", "Lovelace")
+        self.assertEqual(copies, [self.lab / "01_exercise__submission_Ada_Lovelace.ipynb"])
+        self.assertEqual(copies[0].read_bytes(), self.original)
+        self.assertEqual(correction.read_bytes(), b"instructor solutions")
+
     def test_unicode_spaces_and_path_characters_stay_in_lab(self):
         copy = MODULE.prepare_lab(self.lab, "  Jose\u0301 / Anne  ", "O'Neil\\de Silva")[0]
         self.assertEqual(copy.name, "01_exercise__submission_José-Anne_O-Neil-de-Silva.ipynb")
