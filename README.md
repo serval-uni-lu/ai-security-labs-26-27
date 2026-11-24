@@ -9,6 +9,7 @@ Labs will be added throughout the course. Each lab has its own Python environmen
 - [Lab 01 — Environment setup](src/01_environment_setup/): install the dependencies with uv and run your first notebook.
 - [Lab 03 — Certified robustness](src/03_certified_robustness/): a 15–20 minute practical with two code-completion exercises using auto-LiRPA bounds and certificates. Open the notebook directly using its lab README; there is no submission.
 - [Lab 04 — Tabular attacks](src/04_tabular_attacks/): a practical exercise teaching the peculiarities of tabular machine learning and related security attacks. Specifically, students learn how to transform an attack made for computer vision (i.e. PGD) into a variant that considers validity constraints of tabular data.
+- [Lab 11 - Explainable AI](src/11_explainability/): a practical exercise to hands on XAI techniques. Specifically, students will learn and use XAI techniques for tabular datasets, counterfactual explanations, attention-based XAI for LLM, activation maps for VLM and adversarial attacks on explanations.
 
 ## 1. Install the tools
 
